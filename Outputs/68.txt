@@ -1,0 +1,80 @@
+Program Body
+{
+  _Bool RET;
+  RET = 0;
+  _Bool a;
+  RET = a;
+}
+
+'nondet_bool'
+Function Name:
+nondet_bool
+Return Type:
+_Bool
+Input Variables:
+{}
+Local Variables:
+{ RET:_Bool a:_Bool}
+
+Output in normal notation:
+1. Frame axioms:
+a1 = a
+
+2. Output equations:
+nondet_bool = a
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+
+Final Complexity ---- O(1)
+Program Body
+{
+  int v1_var;
+  v1_var = __VERIFIER_nondet_uint();
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ v1_var:int}
+
+Output in normal notation:
+1. Frame axioms:
+a1 = a
+
+2. Output equations:
+nondet_bool = a
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+v1_var1 = __VERIFIER_nondet_uint2
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+
+Final Complexity ---- O(1)
+
+
+Final Complexity ---- O(1)
+

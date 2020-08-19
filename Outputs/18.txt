@@ -1,0 +1,54 @@
+Program Body
+{
+  int A;
+  int m;
+  int i;
+  i = A;
+  while (i > 0)
+  {
+    if (i < m)
+    {
+      i = i - 1;
+    }
+    else
+    {
+      i = i - m;
+    }
+
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ A:int m:int i:int}
+
+Output in normal notation:
+1. Frame axioms:
+A1 = A
+m1 = m
+
+2. Output equations:
+i1 = i3(_N1)
+
+3. Other axioms:
+i3((_n1+1)) = ite((i3(_n1)<m),(i3(_n1)-1),(i3(_n1)-m))
+i3(0) = A
+(0<=-(i3(_N1)))
+(_n1<_N1) -> (i3(_n1)>0)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1
+(((A-m)+1) or ((A/m)+0))
+Final Complexity ---- O(_n)
+

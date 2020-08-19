@@ -1,0 +1,58 @@
+Program Body
+{
+  int RET;
+  RET = 0;
+  int x;
+  x = 0;
+  int y;
+  y = 50;
+  while (x < 100)
+  {
+    if (x < 50)
+    {
+      x = x + 1;
+    }
+    else
+    {
+      x = x + 1;
+      y = y + 1;
+    }
+
+  }
+
+  RET = 0;
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ RET:int x:int y:int}
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+main = 0
+x1 = (_N1+0)
+y1 = y4(_N1)
+
+3. Other axioms:
+y4((_n1+1)) = ite(((_n1+0)<50),y4(_n1),(y4(_n1)+1))
+y4(0) = 50
+(_N1>=(100-0))
+(_n1<_N1) -> ((_n1+0)<100)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1
+100
+Final Complexity ---- O(_n)
+

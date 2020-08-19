@@ -1,0 +1,46 @@
+Program Body
+{
+  int x;
+  x = 0;
+  int y;
+  y = 0;
+  int C;
+  while (y < C)
+  {
+    y = y + x;
+    x = x + 1;
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ x:int y:int C:int}
+
+Output in normal notation:
+1. Frame axioms:
+C1 = C
+
+2. Output equations:
+x1 = (_N1+0)
+y1 = ((((((2*_N1)*0)-_N1)+(2*0))+(_N1**2))/2)
+
+3. Other axioms:
+(((((((2*_N1)*0)-_N1)+(2*0))+(_N1**2))/2)>=C)
+(_n1<_N1) -> (((((((2*_n1)*0)-_n1)+(2*0))+(_n1**2))/2)<C)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(sqrt(_n)) of the loop corresponds to loop constant _N1
+((sqrt(((8*C)+1))/2)+(1/2))
+Final Complexity ---- O(sqrt(_n))
+

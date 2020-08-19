@@ -1,0 +1,50 @@
+Program Body
+{
+  int y;
+  int z;
+  while (z > y)
+  {
+    y = y + 1;
+  }
+
+  while (y > 2)
+  {
+    y = y - 3;
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ y:int z:int}
+
+Output in normal notation:
+1. Frame axioms:
+z1 = z
+
+2. Output equations:
+y1 = ((-(3)*_N2)+(_N1+y))
+
+3. Other axioms:
+(_N1>=(-(y)+z))
+(_n1<_N1) -> (z>(_n1+y))
+(_N2>=(((_N1+y)/3)-(2/3)))
+(_n2<_N2) -> (((-(3)*_n2)+(_N1+y))>2)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1
+(-(y)+z)
+Bound - O(_n) of the loop corresponds to loop constant _N2
+(((_N1/3)+(y/3))-(2/3))
+Final Complexity ---- O(2*_n)
+

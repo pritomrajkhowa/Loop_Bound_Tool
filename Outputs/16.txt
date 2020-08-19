@@ -1,0 +1,70 @@
+Program Body
+{
+  int break_1_flag;
+  break_1_flag = 0;
+  int A;
+  int x;
+  x = 0;
+  int y;
+  y = 0;
+  while ((1 > 0) && (break_1_flag == 0))
+  {
+    break_1_flag = 0;
+    if (x < A)
+    {
+      y = y + 1;
+      x = x + 1;
+    }
+    else
+      if (y > 0)
+    {
+      y = y - 1;
+    }
+    else
+    {
+      break_1_flag = 1;
+    }
+
+
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ break_1_flag:int A:int x:int y:int}
+
+Output in normal notation:
+1. Frame axioms:
+A1 = A
+
+2. Output equations:
+break_1_flag1 = break_1_flag7(_N1)
+x1 = x7(_N1)
+y1 = y7(_N1)
+
+3. Other axioms:
+break_1_flag7((_n1+1)) = ite((x7(_n1)<A),0,ite((y7(_n1)>0),0,1))
+x7((_n1+1)) = ite((x7(_n1)<A),(x7(_n1)+1),x7(_n1))
+y7((_n1+1)) = ite((x7(_n1)<A),(y7(_n1)+1),ite((y7(_n1)>0),(y7(_n1)-1),y7(_n1)))
+break_1_flag7(0) = 0
+x7(0) = 0
+y7(0) = 0
+((1<=0) or (break_1_flag7(_N1)!=0))
+(_n1<_N1) -> ((1>0) and (break_1_flag7(_n1)==0))
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1
+(A+A)
+Final Complexity ---- O(_n)
+

@@ -1,0 +1,43 @@
+Program Body
+{
+  int x;
+  int y;
+  int t;
+  while (x > 0)
+  {
+    x = x - 1;
+    t = x;
+    x = y;
+    y = t;
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ x:int y:int t:int}
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+x1 = y4((_N1+1))
+y1 = (y4_1((_N1+2))-1)
+t1 = ((y4_1((_N1+2))-1)-1)
+
+3. Other axioms:
+(0<=-(y4_2((_N1+1))))
+(_n1<_N1) -> (y4((_n1+1))>0)
+
+4. Assumption :
+
+5. Assertion :
+
+
+

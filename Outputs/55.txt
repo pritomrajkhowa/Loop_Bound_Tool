@@ -1,0 +1,46 @@
+Program Body
+{
+  int i;
+  int Y;
+  int X;
+  i = 1;
+  Y = 1;
+  while (i <= X)
+  {
+    Y = Y * i;
+    i = i + 1;
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ i:int Y:int X:int}
+
+Output in normal notation:
+1. Frame axioms:
+X1 = X
+
+2. Output equations:
+i1 = (_N1+1)
+Y1 = factorial(_N1)
+
+3. Other axioms:
+((_N1+1)>X)
+(_n1<_N1) -> ((_n1+1)<=X)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1
+X
+Final Complexity ---- O(_n)
+

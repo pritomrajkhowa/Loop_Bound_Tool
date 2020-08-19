@@ -1,0 +1,68 @@
+Program Body
+{
+  int break_1_flag;
+  break_1_flag = 0;
+  int A;
+  int x;
+  x = 0;
+  while ((x < A) && (break_1_flag == 0))
+  {
+    break_1_flag = 0;
+    if (__VERIFIER_nondet_int() > 0)
+    {
+      break_1_flag = 1;
+    }
+
+    if (break_1_flag == 0)
+    {
+      x = x + 1;
+    }
+
+  }
+
+  while (x < A)
+  {
+    x = x + 1;
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ break_1_flag:int A:int x:int}
+
+Output in normal notation:
+1. Frame axioms:
+A1 = A
+
+2. Output equations:
+break_1_flag1 = break_1_flag5(_N1)
+x1 = (_N2+x5(_N1))
+
+3. Other axioms:
+break_1_flag5((_n1+1)) = ite((__VERIFIER_nondet_int2(_n1)>0),1,0)
+x5((_n1+1)) = ite((ite((__VERIFIER_nondet_int2(_n1)>0),1,0)==0),(x5(_n1)+1),x5(_n1))
+break_1_flag5(0) = 0
+x5(0) = 0
+((x5(_N1)>=A) or (break_1_flag5(_N1)!=0))
+(_n1<_N1) -> ((x5(_n1)<A) and (break_1_flag5(_n1)==0))
+(_N2>=(A-x5(_N1)))
+(_n2<_N2) -> ((_n2+x5(_N1))<A)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1
+A
+Bound - O(_n) of the loop corresponds to loop constant _N2
+((A-_N1) or A)
+Final Complexity ---- O(2*_n)
+

@@ -1,0 +1,53 @@
+Program Body
+{
+  int x;
+  int y;
+  while (x > y)
+  {
+    if (__VERIFIER_nondet_int() > 0)
+    {
+      y = y + 1;
+    }
+    else
+    {
+      x = x - 1;
+    }
+
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ x:int y:int}
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+x1 = x3(_N1)
+y1 = y3(_N1)
+
+3. Other axioms:
+x3((_n1+1)) = ite((__VERIFIER_nondet_int2(_n1)>0),x3(_n1),(x3(_n1)-1))
+y3((_n1+1)) = ite((__VERIFIER_nondet_int2(_n1)>0),(y3(_n1)+1),y3(_n1))
+x3(0) = x
+y3(0) = y
+(0<=(-(x3(_N1))+y3(_N1)))
+(_n1<_N1) -> (x3(_n1)>y3(_n1))
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1
+(x-y)
+Final Complexity ---- O(_n)
+

@@ -1,0 +1,41 @@
+Program Body
+{
+  int X;
+  int a;
+  if (X <= 0)
+  {
+    a = -X;
+  }
+  else
+  {
+    a = X;
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ X:int a:int}
+
+Output in normal notation:
+1. Frame axioms:
+X1 = X
+
+2. Output equations:
+a1 = ite((X<=0),-(X),X)
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+
+Final Complexity ---- O(1)
+

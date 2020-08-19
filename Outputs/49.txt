@@ -1,0 +1,70 @@
+Program Body
+{
+  int A;
+  int B;
+  int q;
+  int r;
+  int b;
+  q = 0;
+  r = A;
+  b = B;
+  while (r >= b)
+  {
+    b = 2 * b;
+  }
+
+  while (b != B)
+  {
+    q = 2 * q;
+    b = b / 2;
+    if (r >= b)
+    {
+      q = q + 1;
+      r = r - b;
+    }
+
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ A:int B:int q:int r:int b:int}
+
+Output in normal notation:
+1. Frame axioms:
+A1 = A
+B1 = B
+
+2. Output equations:
+q1 = q6(_N2)
+r1 = r6(_N2)
+b1 = ((2**-(_N2))*((2**_N1)*B))
+
+3. Other axioms:
+(A<((2**_N1)*B))
+(_n1<_N1) -> (A>=((2**_n1)*B))
+q6((_n2+1)) = ite((r6(_n2)>=(((2**-(_n2))*((2**_N1)*B))/2)),((2*q6(_n2))+1),(2*q6(_n2)))
+r6((_n2+1)) = ite((r6(_n2)>=(((2**-(_n2))*((2**_N1)*B))/2)),(r6(_n2)-(((2**-(_n2))*((2**_N1)*B))/2)),r6(_n2))
+q6(0) = 0
+r6(0) = A
+(((2**-(_N2))*((2**_N1)*B))==B)
+(_n2<_N2) -> (((2**-(_n2))*((2**_N1)*B))!=B)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(log(_n)/log_1(2)) of the loop corresponds to loop constant _N1
+log(2*A/B)/log_1(2)
+Bound - O(_n) of the loop corresponds to loop constant _N2
+_N1
+Final Complexity ---- O(_n + log(_n)/log_1(2))
+

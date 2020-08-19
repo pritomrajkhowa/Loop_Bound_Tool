@@ -1,0 +1,48 @@
+Program Body
+{
+  int a;
+  int b;
+  int J_var;
+  int A;
+  J_var = 0;
+  A = 0;
+  while (J_var < b)
+  {
+    A = A + a;
+    J_var = J_var + 1;
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ a:int b:int J_var:int A:int}
+
+Output in normal notation:
+1. Frame axioms:
+a1 = a
+b1 = b
+
+2. Output equations:
+J_var1 = (0+_N1)
+A1 = (0+(_N1*a))
+
+3. Other axioms:
+(_N1>=(-(0)+b))
+(_n1<_N1) -> ((0+_n1)<b)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1
+b
+Final Complexity ---- O(_n)
+

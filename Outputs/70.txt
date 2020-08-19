@@ -1,0 +1,31 @@
+Program Body
+{
+  int v1_var;
+  v1_var = __VERIFIER_nondet_int();
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ v1_var:int}
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+v1_var1 = __VERIFIER_nondet_int2
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+
+Final Complexity ---- O(1)
+

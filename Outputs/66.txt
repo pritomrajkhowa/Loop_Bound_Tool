@@ -1,0 +1,41 @@
+Program Body
+{
+  int a;
+  int b;
+  while (a >= b)
+  {
+    b = b + 1;
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ a:int b:int}
+
+Output in normal notation:
+1. Frame axioms:
+a1 = a
+
+2. Output equations:
+b1 = (_N1+b)
+
+3. Other axioms:
+(a<(_N1+b))
+(_n1<_N1) -> (a>=(_n1+b))
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1
+((a-b)+1)
+Final Complexity ---- O(_n)
+

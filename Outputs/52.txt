@@ -1,0 +1,47 @@
+Program Body
+{
+  int X;
+  int sum;
+  int i;
+  int X;
+  sum = 0;
+  i = 0;
+  while (i < X)
+  {
+    i = i + 1;
+    sum = sum + (i * 2);
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ X:int sum:int i:int}
+
+Output in normal notation:
+1. Frame axioms:
+X1 = X
+
+2. Output equations:
+sum1 = ((((_N1**2)+((2*_N1)*0))+_N1)+0)
+i1 = (_N1+0)
+
+3. Other axioms:
+(_N1>=(X-0))
+(_n1<_N1) -> ((_n1+0)<X)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1
+X
+Final Complexity ---- O(_n)
+

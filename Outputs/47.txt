@@ -1,0 +1,46 @@
+Program Body
+{
+  int M;
+  int s;
+  int i;
+  s = 0;
+  i = 0;
+  while (i < M)
+  {
+    s = s + M;
+    i = i + 1;
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ M:int s:int i:int}
+
+Output in normal notation:
+1. Frame axioms:
+M1 = M
+
+2. Output equations:
+s1 = ((M*_N1)+0)
+i1 = (_N1+0)
+
+3. Other axioms:
+(_N1>=(M-0))
+(_n1<_N1) -> ((_n1+0)<M)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1
+M
+Final Complexity ---- O(_n)
+

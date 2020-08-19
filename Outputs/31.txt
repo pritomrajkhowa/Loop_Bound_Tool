@@ -1,0 +1,48 @@
+Program Body
+{
+  int X;
+  int Y;
+  int r;
+  int q;
+  r = X;
+  q = 0;
+  while (r >= Y)
+  {
+    r = r - Y;
+    q = q + 1;
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ X:int Y:int r:int q:int}
+
+Output in normal notation:
+1. Frame axioms:
+X1 = X
+Y1 = Y
+
+2. Output equations:
+r1 = ((-(Y)*_N1)+X)
+q1 = (_N1+0)
+
+3. Other axioms:
+(((-(Y)*_N1)+X)<Y)
+(_n1<_N1) -> (((-(Y)*_n1)+X)>=Y)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1
+(X/Y)
+Final Complexity ---- O(_n)
+

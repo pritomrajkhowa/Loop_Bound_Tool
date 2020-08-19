@@ -1,0 +1,60 @@
+Program Body
+{
+  int x;
+  int y;
+  while (x > 0)
+  {
+    x = x - 1;
+    y = y + 2;
+  }
+
+  while (y > 0)
+  {
+    y = y - 1;
+  }
+
+  while (y > 0)
+  {
+    y = y - 1;
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ x:int y:int}
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+x1 = (-(_N1)+x)
+y1 = (-(_N3)+(-(_N2)+((2*_N1)+y)))
+
+3. Other axioms:
+(_N1>=x)
+(_n1<_N1) -> ((-(_n1)+x)>0)
+(_N2>=((2*_N1)+y))
+(_n2<_N2) -> ((-(_n2)+((2*_N1)+y))>0)
+(_N3>=(-(_N2)+((2*_N1)+y)))
+(_n3<_N3) -> ((-(_n3)+(-(_N2)+((2*_N1)+y)))>0)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1
+x
+Bound - O(_n) of the loop corresponds to loop constant _N2
+((2*_N1)+y)
+Bound - O(_n) of the loop corresponds to loop constant _N3
+(((2*_N1)-_N2)+y)
+Final Complexity ---- O(3*_n)
+

@@ -1,0 +1,162 @@
+Program Body
+{
+  int _1DUMMY;
+  _1DUMMY = 0;
+  if (x > y)
+  {
+    x = x - 1;
+    _1DUMMY = count_up(x, y);
+  }
+
+}
+
+'count_down'
+Function Name:
+count_down
+Return Type:
+void
+Input Variables:
+{ x:int y:int}
+Local Variables:
+{ _1DUMMY:int}
+
+Output in normal notation:
+1. Frame axioms:
+y1(y) = y
+
+2. Output equations:
+x1(x,y) = ite((x>y),(x-1),x)
+_1DUMMY1(x,y) = ite((x>y),count_up((x-1),y),0)
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+
+Final Complexity ---- O(1)
+Program Body
+{
+  int _1DUMMY;
+  _1DUMMY = 0;
+  if ((y + 1) < x)
+  {
+    y = y + 2;
+    _1DUMMY = count_down(x, y);
+  }
+
+}
+
+'count_up'
+Function Name:
+count_up
+Return Type:
+void
+Input Variables:
+{ x:int y:int}
+Local Variables:
+{ _1DUMMY:int}
+
+Output in normal notation:
+1. Frame axioms:
+y1(y) = y
+
+2. Output equations:
+x1(x,y) = ite((x>y),(x-1),x)
+_1DUMMY1(x,y) = ite((x>y),count_up((x-1),y),0)
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+Output in normal notation:
+1. Frame axioms:
+x1(x) = x
+
+2. Output equations:
+y1(y,x) = ite(((y+1)<x),(y+2),y)
+_1DUMMY1(y,x) = ite(((y+1)<x),count_down(x,(y+2)),0)
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+
+Final Complexity ---- O(1)
+
+
+Final Complexity ---- O(1)
+Program Body
+{
+  int _1DUMMY;
+  _1DUMMY = 0;
+  int y;
+  int z;
+  _1DUMMY = count_down(y, z);
+}
+
+Function Name:
+main
+Return Type:
+void
+Input Variables:
+{}
+Local Variables:
+{ _1DUMMY:int y:int z:int}
+
+Output in normal notation:
+1. Frame axioms:
+y1(y) = y
+
+2. Output equations:
+x1(x,y) = ite((x>y),(x-1),x)
+_1DUMMY1(x,y) = ite((x>y),count_up((x-1),y),0)
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+Output in normal notation:
+1. Frame axioms:
+x1(x) = x
+
+2. Output equations:
+y1(y,x) = ite(((y+1)<x),(y+2),y)
+_1DUMMY1(y,x) = ite(((y+1)<x),count_down(x,(y+2)),0)
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+Output in normal notation:
+1. Frame axioms:
+y1 = y
+z1 = z
+
+2. Output equations:
+_1DUMMY1 = count_down_1(y,z)
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+
+Final Complexity ---- O(1)
+
+
+Final Complexity ---- O(1)
+
+
+Final Complexity ---- O(1)
+

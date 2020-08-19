@@ -1,0 +1,46 @@
+Program Body
+{
+  int x;
+  int y;
+  int A;
+  int B;
+  while ((A * x) > B)
+  {
+    x = x - 1;
+    y = y + 2;
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ x:int y:int A:int B:int}
+
+Output in normal notation:
+1. Frame axioms:
+A1 = A
+B1 = B
+
+2. Output equations:
+x1 = (-(_N1)+x)
+y1 = ((2*_N1)+y)
+
+3. Other axioms:
+(0>=((A*(-(_N1)+x))-B))
+(_n1<_N1) -> ((A*(-(_n1)+x))>B)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1
+(x-(B/A))
+Final Complexity ---- O(_n)
+

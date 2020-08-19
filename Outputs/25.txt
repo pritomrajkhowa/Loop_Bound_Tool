@@ -1,0 +1,72 @@
+Program Body
+{
+  int break_1_flag;
+  break_1_flag = 0;
+  int A;
+  int x;
+  x = 0;
+  while (x < A)
+  {
+    x = x + 1;
+    while ((x < A) && (break_1_flag == 0))
+    {
+      break_1_flag = 0;
+      if (__VERIFIER_nondet_int() > 0)
+      {
+        break_1_flag = 1;
+      }
+
+      if (break_1_flag == 0)
+      {
+        x = x + 1;
+      }
+
+    }
+
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ break_1_flag:int A:int x:int}
+
+Output in normal notation:
+1. Frame axioms:
+A1 = A
+
+2. Output equations:
+break_1_flag1 = break_1_flag7(_N2)
+x1 = x7(_N2)
+
+3. Other axioms:
+break_1_flag5((_n1+1),_n2) = ite((__VERIFIER_nondet_int2(_n1,_n2)>0),1,0)
+x5((_n1+1),_n2) = ite((ite((__VERIFIER_nondet_int2(_n1,_n2)>0),1,0)==0),(x5(_n1,_n2)+1),x5(_n1,_n2))
+break_1_flag5(0,_n2) = break_1_flag7(_n2)
+x5(0,_n2) = (x7(_n2)+1)
+((x5(_N1(_n2),_n2)>=A) or (break_1_flag5(_N1(_n2),_n2)!=0))
+(_n1<_N1(_n2)) -> ((x5(_n1,_n2)<A) and (break_1_flag5(_n1,_n2)==0))
+break_1_flag7((_n2+1)) = break_1_flag5(_N1(_n2),_n2)
+x7((_n2+1)) = x5(_N1(_n2),_n2)
+break_1_flag7(0) = 0
+x7(0) = 0
+(0<=(-(A)+x7(_N2)))
+(_n2<_N2) -> (x7(_n2)<A)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(_n) of the loop corresponds to loop constant _N1(_n2)
+((A-1) or (-(1)+1))
+Bound - O(_n) of the loop corresponds to loop constant _N2
+((A or 1) or A)
+Final Complexity ---- O(_n**2)
+

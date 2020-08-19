@@ -1,0 +1,50 @@
+Program Body
+{
+  int X;
+  int a;
+  int su;
+  int t;
+  a = 0;
+  su = 1;
+  t = 1;
+  while (su <= X)
+  {
+    a = a + 1;
+    t = t + 2;
+    su = su + t;
+  }
+
+}
+
+'main'
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ X:int a:int su:int t:int}
+
+Output in normal notation:
+1. Frame axioms:
+X1 = X
+
+2. Output equations:
+a1 = (_N1+0)
+su1 = ((((_N1**2)+(_N1*1))+_N1)+1)
+t1 = ((2*_N1)+1)
+
+3. Other axioms:
+(((((_N1**2)+(_N1*1))+_N1)+1)>X)
+(_n1<_N1) -> (((((_n1**2)+(_n1*1))+_n1)+1)<=X)
+
+4. Assumption :
+
+5. Assertion :
+
+
+Bound - O(sqrt(_n)) of the loop corresponds to loop constant _N1
+sqrt(X)
+Final Complexity ---- O(sqrt(_n))
+
