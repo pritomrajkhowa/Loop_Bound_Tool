@@ -1,7 +1,7 @@
 import subprocess
 import sys
 import os
-
+import time
 currentdirectory = os.path.dirname(os.path.realpath(__file__))
 
 
@@ -90,9 +90,13 @@ for each_file in all_files:
 
     print(each_file)
     #print('python3 '+' source/viap_tool_bound.py '+each_file)
+ 
+    start_time = time.time()
 
     result = subprocess.run(['python3', 'source/viap_tool_bound.py', each_file], stdout=subprocess.PIPE)
-    
+ 
+    end_time = (time.time() - start_time)    
+
     each_lines=result.stdout.decode("utf-8").split('\n')
 
     file_count=file_count+1
@@ -110,6 +114,8 @@ for each_file in all_files:
     else:
 
         each_file_details.append("Failed")
+
+    each_file_details.append(str(end_time))
 
     writtingFile( 'Outputs/'+str(file_count)+'.txt' , ourput_string )
 
@@ -147,7 +153,7 @@ for each_file in all_files:
     Table_Details.append(each_file_details)
 
     html = """<html><table border="1">
-<tr><th>File Name</th><th>Our Tool</th><th>KoAT</th><th>Rank</th><th>LOOPUS</th><th>SPEED</th><th>C4B</th></tr>"""
+<tr><th>File Name</th><th>Our Tool</th><th>Time Taken by Our Tool(sec)</th><th>KoAT</th><th>Rank</th><th>LOOPUS</th><th>SPEED</th><th>C4B</th></tr>"""
     for Table_Detail in Table_Details:
         html += "<tr>"
         for xx in Table_Detail:
