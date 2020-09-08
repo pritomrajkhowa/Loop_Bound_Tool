@@ -24111,13 +24111,17 @@ def prove_auto_loop_bound_strategy1(program, property, program_analysis, program
                         print('ForAll(' + list_var_str + ',Implies(And(' + list_cstr_str + ',' + str_list_values + '),' + expression + '))')
                     else:
                         print (expression)
-                    operator_map[prevSmallKey]=final_complexity
+                    #operator_map[prevSmallKey]=final_complexity
+                    operator_map[prevSmallKey]=simplify(expression)
                     final_complexity=None
 
   
                 temp_final_complexity=None
 
                 prev_key_small=None
+
+
+
 
                 for key_small in operator_map:
 
